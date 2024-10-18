@@ -12,7 +12,7 @@ const { getLatestValueByDB } = require("../utils");
 const VERSIONS_QUERY_FILTER = "versions";
 
 // TODO: Test query efficiency for larger datasets
-const findLatestInLocale = async (model, fields) => {
+export const findLatestInLocale = async (model, fields) => {
   const where = ["vuid=a.vuid"];
 
   const mapColumnToField = {};
